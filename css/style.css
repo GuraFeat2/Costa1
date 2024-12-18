@@ -682,3 +682,110 @@ align-items: center;
         flex-direction: column;
     }
 }
+/*----------footer__footer----------*/
+.footer__footer {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 100px;
+    align-content: center;
+}
+.seti {
+    margin-top: 10px;
+    margin-right: 25px;
+}
+.footer__link2 {
+    display: flex;
+    
+}
+.link2__one {
+    display: flex;
+    flex-direction: column;
+}
+.one__link {
+    font-size: 17px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 10px;
+    transition: all 0.3s ease 0s;
+}
+.link2__two {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+.two__link {
+    font-size: 17px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 10px;
+    transition: all 0.3s ease 0s;
+}
+.two__link:hover,
+.one__link:hover{
+    color: #118DA8;
+}
+/*----------media__footer----------*/
+@media (max-width: 1024px){
+    .footer__footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .link2__two{
+        margin-left: 0px;
+    }
+    .footer__link2{
+        justify-content: space-between;
+        width: 600px;
+        text-align: center;
+    }
+    .link1__seti{
+        display: flex;
+        justify-content: space-between;
+    }
+    .seti{
+        margin-right: 0px;
+    }
+    .link__footer{
+        margin: 0px;
+    }
+    .link__footerflex{
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+    }
+}
+@media (max-width: 768px){
+    .link__footer{
+        margin: 0px;
+    }
+    .link__footerflex{
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+    }
+    .footer__link2{
+        width: 300px;
+        flex-direction: column;
+    }
+    .link2__one,
+    .link2__two{
+        margin-top: 15px;
+        
+    }
+    .footer__footer{
+        margin-top: 50px;
+    }
+}
+@media (max-width: 425px){
+    .link__footer{
+        margin: 0px;
+    }
+    .link__footerflex{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+    }
+}
